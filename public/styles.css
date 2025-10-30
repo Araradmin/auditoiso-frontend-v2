@@ -1,0 +1,21 @@
+:root{
+  --bg:#f6f7f9; --card:#fff; --txt:#0f172a; --muted:#6b7280; --line:#e5e7eb;
+  --brand1:#0ea5e9; --brand2:#10b981; --radius:14px; --shadow:0 6px 24px rgba(0,0,0,.06);
+  --font: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+*{box-sizing:border-box} html,body,#root{height:100%} body{margin:0; background:var(--bg); color:var(--txt); font-family:var(--font)}
+.container{max-width:1080px; margin:0 auto; padding:24px;} .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:20px;}
+.row{display:flex; gap:10px; flex-wrap:wrap} .col{display:flex; flex-direction:column; gap:10px}
+.header{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px}
+.brand{display:flex; align-items:center; gap:10px} .logo{width:34px; height:34px; border-radius:8px; background:linear-gradient(135deg,var(--brand1),var(--brand2));}
+.title{margin:0; font-size:22px; font-weight:700} .subtitle{margin:2px 0 0; color:var(--muted)}
+.btn{appearance:none; border:1px solid var(--line); background:#fff; padding:10px 14px; border-radius:10px; cursor:pointer}
+.btn:hover{box-shadow:0 1px 6px rgba(0,0,0,.08)} .btn-primary{background:linear-gradient(135deg,var(--brand1),var(--brand2)); border:none; color:#fff}
+.btn-outline{background:#fff; color:var(--txt)} .btn-danger{background:#ef4444; color:#fff; border:none}
+.input,.select,.textarea{width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:10px; background:#fff; font:inherit}
+.textarea{min-height:100px} .list{list-style:none; padding:0; margin:0} .item{display:flex; gap:10px; padding:12px 8px; border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:none} .item-title{font-weight:600} .item-meta{font-size:12px; color:var(--muted)}
+.badge{display:inline-block; padding:4px 10px; border-radius:999px; font-size:12px; background:rgba(14,165,233,.12); color:#0369a1; border:1px solid rgba(14,165,233,.25)}
+.progress{height:10px; background:#f3f4f6; border-radius:999px; overflow:hidden; border:1px solid var(--line)} .progress>div{height:100%; background:linear-gradient(90deg, var(--brand1), var(--brand2));}
+.login-wrap{display:grid; place-items:center; min-height:100vh; background:var(--bg)} .login{width:380px; padding:20px; border:1px solid var(--line); border-radius:16px; background:#fff; box-shadow:var(--shadow)}
+.login h2{margin:0} .login p{margin:6px 0 16px; color:var(--muted)}
