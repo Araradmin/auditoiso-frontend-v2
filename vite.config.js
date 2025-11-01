@@ -1,14 +1,20 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
-// ✅ Configuración compatible con Vercel
 export default defineConfig({
   plugins: [react()],
-  root: '.', // la raíz del proyecto
+  root: '.', // raíz del proyecto
   build: {
     outDir: 'dist',
     rollupOptions: {
-      input: './index.html'
+      // ✅ indicar que el punto de entrada es el index.html raíz
+      input: resolve(__dirname, 'index.html')
+    }
+  },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './src')
     }
   }
 })
