@@ -1,6 +1,7 @@
 // src/services/AuthService.js  (o donde tengas tus llamadas API)
 
 const API_URL = import.meta.env.VITE_API_URL || "https://auditoiso-backend-v4.onrender.com";
+console.log("🌐 API_URL cargada desde el frontend:", API_URL);
 
 // 🔹 Helper para peticiones JSON
 async function request(endpoint, method = "GET", data = null, token = null) {
