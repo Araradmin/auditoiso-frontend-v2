@@ -1,5 +1,3 @@
-
-// src/services/AuthService.js
 const API_URL = import.meta.env.VITE_API_URL || "https://auditoiso-backend-v4.onrender.com";
 
 export async function request(endpoint, method = "GET", data = null, token = null) {
