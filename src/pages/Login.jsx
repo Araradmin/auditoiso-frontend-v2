@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { apiFetch } from '../services/api'
+import { request as apiFetch } from '../services/AuthService'
 export default function Login({ onLogged }){
   const [email, setEmail] = useState('admin@example.com');
   const [password, setPassword] = useState('password');
