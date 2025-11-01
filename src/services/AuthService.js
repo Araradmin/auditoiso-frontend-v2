@@ -18,6 +18,3 @@ export async function request(endpoint, method = "GET", data = null, token = nul
   }
   return json;
 }
-
-// 🧠 Ejemplo de uso:
-// const user = await request("/auth/login", "POST", { email, password });
