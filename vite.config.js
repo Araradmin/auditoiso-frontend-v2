@@ -8,7 +8,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      // ✅ indicar que el punto de entrada es el index.html raíz
       input: resolve(__dirname, 'index.html')
     }
   },
@@ -16,5 +15,8 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, './src')
     }
+  },
+  server: {
+    port: 5173
   }
 })
